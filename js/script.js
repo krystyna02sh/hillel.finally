@@ -22,3 +22,11 @@ $('.send-button').click(function () {
     console.log(this)
     $('.send-button').addClass('active');
 });
+$('.button-popup').click(function () {
+    $('.popup').addClass('active');
+    $('.ask-form').addClass('active');
+})
+$('.exit-container').click(function () {
+    $('.popup').removeClass('active');
+    $('.ask-form').removeClass('active');
+})
