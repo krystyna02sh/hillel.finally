@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HLEGAL</title>
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css" />
     <link
       rel="stylesheet"
       href="assets/bootstrap-5.0.2-dist/css/bootstrap.css"
@@ -178,11 +180,11 @@
                       width="32"
                       height="32"
                       rx="8"
-                      fill="#ffff"
+                      fill="none"
                     />
-                    <path d="M7 10H25" stroke="#323264" stroke-width="2" />
-                    <path d="M7 16H25" stroke="#323264" stroke-width="2" />
-                    <path d="M7 22H25" stroke="#323264" stroke-width="2" />
+                    <path d="M7 10H25" stroke="#ffffff" stroke-width="2" />
+                    <path d="M7 16H25" stroke="#ffffff" stroke-width="2" />
+                    <path d="M7 22H25" stroke="#ffffff" stroke-width="2" />
                   </svg>
                   <svg
                     class="exit"
@@ -276,9 +278,9 @@
         <section class="describe-section">
           <div class="container-small">
             <div class="description-container">
-              <div class="d-flex">
+              <div class="wrapper d-flex">
                 <div
-                  class="nav flex-column nav-pills me-3"
+                  class="nav nav-pills me-3"
                   id="v-pills-tab"
                   role="tablist"
                   aria-orientation="vertical"
@@ -411,16 +413,6 @@
                   </div>
                 </div>
               </div>
-              <div class="list">
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </div>
-
-              <div class="turn-idea"></div>
             </div>
           </div>
         </section>
@@ -914,112 +906,57 @@
       </section>
       <section class="slider-section">
         <div class="container">
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-ride="carousel"
-          >
-            <ol class="carousel-indicators">
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="1"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="2"
-              ></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
+          <div class="my-slider">
+            <div>
+              <div>
                 <div class="first">
-                  <img
-                    class="d-block w-100"
-                    src="./images/Team-1.jpg"
-                    alt="Second slide"
-                  />
+                  <img src="./images/Team-1.jpg" alt="Man" />
 
-                  <div class="text-car">
-                    <p class="command">команда></p>
-                    <h4 class="title-of-slide">
+                  <div>
+                    <a class="command" href="#">команда></a>
+                    <h3 class="title-of-slide">
                       Ми звикли брати на себе відповідальність та завжди
                       гарантуємо чесну, вчасну допомогу, навіть у ситуаціях,
                       коли більшість безсилі.
-                    </h4>
-                    <p class="name">Олександр Олександровський</p>
-                    <p class="position">Керуючий партнер</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="first">
-                  <img
-                    class="d-block w-100"
-                    src="./images/Team-1.jpg"
-                    alt="Third slide"
-                  />
-
-                  <div class="text-car">
-                    <p class="command">команда></p>
-                    <h4 class="title-of-slide">
-                      Ми звикли брати на себе відповідальність та завжди
-                      гарантуємо чесну, вчасну допомогу, навіть у ситуаціях,
-                      коли більшість безсилі.
-                    </h4>
-                    <p class="name">Олександр Олександровський</p>
-                    <p class="position">Керуючий партнер</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="first">
-                  <img
-                    class="d-block w-100"
-                    src="./images/Team-1.jpg"
-                    alt="First slide"
-                  />
-
-                  <div class="text-car">
-                    <p class="command">команда></p>
-                    <h4 class="title-of-slide">
-                      Ми звикли брати на себе відповідальність та завжди
-                      гарантуємо чесну, вчасну допомогу, навіть у ситуаціях,
-                      коли більшість безсилі.
-                    </h4>
+                    </h3>
                     <p class="name">Олександр Олександровський</p>
                     <p class="position">Керуючий партнер</p>
                   </div>
                 </div>
               </div>
             </div>
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
+            <div>
+              <div class="first">
+                <img src="./images/Team-1.jpg" alt="Man" />
+
+                <div style="padding: 30px" class="text-about-us">
+                  <a class="command" href="#">команда></a>
+                  <h3 class="title-of-slide">
+                    Ми звикли брати на себе відповідальність та завжди
+                    гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли
+                    більшість безсилі.
+                  </h3>
+                  <p class="name">Олександр Олександровський</p>
+                  <p class="position">Керуючий партнер</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="first">
+                <img src="./images/Team-1.jpg" alt="Man" />
+
+                <div class="text-slide">
+                  <a class="command" href="#">команда></a>
+                  <h3 class="title-of-slide">
+                    Ми звикли брати на себе відповідальність та завжди
+                    гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли
+                    більшість безсилі.
+                  </h3>
+                  <p class="name">Олександр Олександровський</p>
+                  <p class="position">Керуючий партнер</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1068,12 +1005,14 @@
       </section>
       <section class="article-section">
         <div class="container">
-          <a href="#">publications></a>
-          <h3>We have something to tell</h3>
+          <a class="public-link" href="#">publications></a>
+          <h3 class="title-public">We have something to tell</h3>
           <div class="article-container">
-            <div class="article">
-              <div><img src="./images/Publication-1.jpg" alt="" /></div>
-              <div class="article-1">
+            <div class="article area-1">
+              <div style="border-radius: 8px 8px 0px 0px">
+                <img src="./images/Publication-1.jpg" alt="" />
+              </div>
+              <div style="border-radius: 0px 0px 8px 8px" class="article-1">
                 <h4 class="article-title">Equity associate</h4>
                 <p class="date">April 22</p>
                 <hr class="linear" />
@@ -1083,9 +1022,15 @@
                 </p>
               </div>
             </div>
-            <div class="article">
-              <div><img src="./images/Publication-2.jpg" alt="" /></div>
-              <div class="article-1">
+            <div class="article area-2">
+              <div>
+                <img
+                  style="border-radius: 8px 8px 0px 0px"
+                  src="./images/Publication-2.jpg"
+                  alt=""
+                />
+              </div>
+              <div style="border-radius: 0px 0px 8px 8px" class="article-1">
                 <h4 class="article-title">
                   Penalty for the Good Corporation: what will happen to Google
                   and others for violating the GDPR
@@ -1099,11 +1044,15 @@
                 </p>
               </div>
             </div>
-            <div class="article">
+            <div class="article area-3">
               <div>
-                <img src="./images/Publication-3.jpg" alt="" />
+                <img
+                  style="border-radius: 8px 8px 0px 0px"
+                  src="./images/Publication-3.jpg"
+                  alt=""
+                />
               </div>
-              <div class="article-1">
+              <div style="border-radius: 0px 0px 8px 8px" class="article-1">
                 <h4 class="article-title">Millennial Testament</h4>
                 <p class="date">August 19</p>
                 <hr class="linear" />
@@ -1212,6 +1161,7 @@
       </div>
     </footer>
     <script src="./assets/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
     <script src="./assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
   </body>

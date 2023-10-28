@@ -22,3 +22,6 @@ $('.send-button').click(function () {
     console.log(this)
     $('.send-button').addClass('active');
 });
+$('.my-slider').slick({
+    dots: true,
+});
