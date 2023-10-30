@@ -71,6 +71,9 @@ html {
 main {
   font-family: "Montserrat", sans-serif !important;
 }
+header:hover {
+  color: none;
+}
 header {
   z-index: 4;
   font-family: "Montserrat", sans-serif !important;
@@ -118,7 +121,6 @@ header {
 .link {
   display: grid;
   grid-template-columns: 0.75fr 0.75fr 0.75fr 5fr 3fr 1fr;
-  max-width: 500px;
 }
 
 .page {
