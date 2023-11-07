@@ -22,10 +22,7 @@ $('.send-button').click(function () {
     console.log(this)
     $('.send-button').addClass('active');
 });
-// $(document).ready(function () {
-//     $('.my-slider').slick();
 
-// });
 $('.my-slider').slick({
 
     adaptiveHeight: true,
@@ -45,19 +42,3 @@ $('.my-slider').slick({
 });
 
 
-$('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 40,
-    nav: true,
-    responsive: {
-        0: {
-            items: 1
-        },
-        500: {
-            items: 2
-        },
-        1000: {
-            items: 4
-        }
-    }
-})
