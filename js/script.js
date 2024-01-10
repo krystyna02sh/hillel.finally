@@ -23,5 +23,9 @@ $('.send-button').click(function () {
     $('.send-button').addClass('active');
 });
 $('.my-slider').slick({
+    arrows: false,
     dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000
 });
